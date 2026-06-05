@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Medical System — Intelligent Healthcare Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toBeHidden">
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="Smart Medical System Home">
+        <div class="nav-logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="10" fill="url(#logoGrad)"/>
+            <path d="M16 7v18M7 16h18" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="5" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop offset="0%" stop-color="#2563eb"/>
+                <stop offset="100%" stop-color="#7c3aed"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="nav-brand-text">Smart<span class="brand-accent">Medical</span></span>
+      </a>
+
+      <div class="nav-links" role="list">
+        <a href="#features" class="nav-link" data-i18n="nav.features">Features</a>
+        <a href="#roles" class="nav-link" data-i18n="nav.roles">Who It's For</a>
+        <a href="#stats" class="nav-link" data-i18n="nav.about">About</a>
+      </div>
+
+      <div class="nav-actions">
+       
+        <button class="lang-btn" id="langToggle" aria-label="Switch language" title="Switch language">
+          <span class="lang-icon">🌐</span>
+          <span class="lang-label" id="langLabel">EN</span>
+        </button>
+
+      
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon sun-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </span>
+          <span class="theme-icon moon-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+        </button>
+
+        <a href="#select-role" class="btn-nav-cta" data-i18n="nav.getStarted">Get Started</a>
+      </div>
+
+    
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+   
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <a href="#features" class="mobile-link" data-i18n="nav.features">Features</a>
+      <a href="#roles" class="mobile-link" data-i18n="nav.roles">Who It's For</a>
+      <a href="#stats" class="mobile-link" data-i18n="nav.about">About</a>
+      <a href="#select-role" class="btn-nav-cta mobile-cta" data-i18n="nav.getStarted">Get Started</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" role="note">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.badge">Intelligent Healthcare Platform 2025</span>
+      </div>
+
+      <h1 class="hero-title" id="hero-heading">
+        <span class="title-line" data-i18n="hero.title1">Healthcare, Reimagined</span>
+        <span class="title-line title-gradient" data-i18n="hero.title2">For Everyone.</span>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
+        A unified platform connecting doctors, patients, and pharmacies — with built-in accessibility for all users. Intelligent prescriptions, real-time pharmacy availability, and seamless communication in one place.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#select-role" class="btn-primary hero-btn" data-i18n="hero.cta">
+          <span>Start Your Journey</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+        <button class="btn-secondary hero-btn" id="watchDemoBtn" data-i18n="hero.demo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+          <span>Watch Demo</span>
+        </button>
+      </div>
+
+      <!-- Trust indicators -->
+      <div class="hero-trust" aria-label="Platform statistics">
+        <div class="trust-item">
+          <span class="trust-num">50K+</span>
+          <span class="trust-label" data-i18n="hero.trust.patients">Patients</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-num">2.8K</span>
+          <span class="trust-label" data-i18n="hero.trust.doctors">Doctors</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-num">340+</span>
+          <span class="trust-label" data-i18n="hero.trust.pharmacies">Pharmacies</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-num">99.9%</span>
+          <span class="trust-label" data-i18n="hero.trust.uptime">Uptime</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card-stack">
+ 
+        <div class="preview-card preview-main glass-card">
+          <div class="preview-card-header">
+            <div class="preview-dot red"></div>
+            <div class="preview-dot yellow"></div>
+            <div class="preview-dot green"></div>
+            <span class="preview-title-text">Smart Medical System</span>
+          </div>
+          <div class="preview-content">
+            <div class="preview-kpi-row">
+              <div class="preview-kpi">
+                <span class="kpi-icon blue">🫀</span>
+                <div>
+                  <div class="kpi-val">142/90</div>
+                  <div class="kpi-lab">Blood Pressure</div>
+                </div>
+              </div>
+              <div class="preview-kpi">
+                <span class="kpi-icon green">🩺</span>
+                <div>
+                  <div class="kpi-val">98.6°F</div>
+                  <div class="kpi-lab">Temperature</div>
+                </div>
+              </div>
+            </div>
+            <div class="preview-chart-mini">
+              <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#2563eb" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,45 C20,38 40,28 60,32 C80,36 100,18 120,22 C140,26 160,12 200,8" stroke="#2563eb" stroke-width="2" fill="none"/>
+                <path d="M0,45 C20,38 40,28 60,32 C80,36 100,18 120,22 C140,26 160,12 200,8 L200,60 L0,60 Z" fill="url(#chartGrad)"/>
+              </svg>
+            </div>
+            <div class="preview-med-list">
+              <div class="preview-med-item available">
+                <span class="med-dot"></span>
+                <span>Amoxicillin 500mg</span>
+                <span class="med-status">✓ Available</span>
+              </div>
+              <div class="preview-med-item available">
+                <span class="med-dot"></span>
+                <span>Panadol 1g</span>
+                <span class="med-status">✓ Available</span>
+              </div>
+              <div class="preview-med-item warning">
+                <span class="med-dot warn"></span>
+                <span>Metformin</span>
+                <span class="med-status warn">⚠ Conflict</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-card preview-notif glass-card float-anim">
+          <div class="notif-icon-wrap red-bg">🚨</div>
+          <div class="notif-text">
+            <div class="notif-title">Critical Alert</div>
+            <div class="notif-sub">Patient needs attention</div>
+          </div>
+        </div>
+
+        <div class="preview-card preview-pharma glass-card float-anim-2">
+          <div class="pharma-header">💊 Pharmacy Match</div>
+          <div class="pharma-item">
+            <span class="pharma-dot avail"></span>
+            <span>Cairo Central — 1.2km</span>
+          </div>
+          <div class="pharma-item">
+            <span class="pharma-dot avail"></span>
+            <span>Giza North — 2.4km</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="features-strip" id="features" aria-labelledby="features-heading">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="features.label">Platform Capabilities</div>
+      <h2 class="section-title" id="features-heading" data-i18n="features.title">Everything healthcare needs, unified.</h2>
+      <p class="section-subtitle" data-i18n="features.subtitle">From intelligent prescriptions to accessibility-first design — built for the real world of modern healthcare.</p>
+
+      <div class="features-grid">
+        <div class="feature-card" tabindex="0" aria-label="Smart Prescriptions feature">
+          <div class="feature-icon-wrap blue-grad">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.rx.title">Smart Prescriptions</h3>
+          <p class="feature-desc" data-i18n="features.rx.desc">Doctors create digital prescriptions with real-time conflict detection and instant pharmacy routing.</p>
+          <div class="feature-tag" data-i18n="features.rx.tag">AI-Powered</div>
+        </div>
+
+        <div class="feature-card" tabindex="0" aria-label="Pharmacy Network feature">
+          <div class="feature-icon-wrap green-grad">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-2 0v-3.5m-14 3.5H3m2 0v-3.5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 00-1-1h-2a1 1 0 00-1 1v5"/></svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.pharmacy.title">Pharmacy Network</h3>
+          <p class="feature-desc" data-i18n="features.pharmacy.desc">Live medication availability across hundreds of pharmacies with distance-based sorting and alternatives.</p>
+          <div class="feature-tag green-tag" data-i18n="features.pharmacy.tag">Real-time</div>
+        </div>
+
+        <div class="feature-card" tabindex="0" aria-label="Patient Timeline feature">
+          <div class="feature-icon-wrap purple-grad">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.timeline.title">Medical Timeline</h3>
+          <p class="feature-desc" data-i18n="features.timeline.desc">Complete patient history — prescriptions, visits, labs, radiology — in a unified chronological view.</p>
+          <div class="feature-tag purple-tag" data-i18n="features.timeline.tag">Unified Records</div>
+        </div>
+
+        <div class="feature-card" tabindex="0" aria-label="Accessibility Mode feature">
+          <div class="feature-icon-wrap orange-grad">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.a11y.title">Accessibility First</h3>
+          <p class="feature-desc" data-i18n="features.a11y.desc">Voice navigation, screen reader support, high contrast, large text — built-in, not bolted on.</p>
+          <div class="feature-tag orange-tag" data-i18n="features.a11y.tag">WCAG 2.1 AAA</div>
+        </div>
+
+        <div class="feature-card" tabindex="0" aria-label="Communication feature">
+          <div class="feature-icon-wrap teal-grad">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.comms.title">Direct Communication</h3>
+          <p class="feature-desc" data-i18n="features.comms.desc">Secure doctor-patient messaging, appointment scheduling, and clinic contact — all in one platform.</p>
+          <div class="feature-tag teal-tag" data-i18n="features.comms.tag">Secure Messaging</div>
+        </div>
+
+        <div class="feature-card" tabindex="0" aria-label="Health Analytics feature">
+          <div class="feature-icon-wrap pink-grad">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.analytics.title">Health Analytics</h3>
+          <p class="feature-desc" data-i18n="features.analytics.desc">Visual charts for blood pressure, blood sugar, and heart rate with trend analysis and alerts.</p>
+          <div class="feature-tag pink-tag" data-i18n="features.analytics.tag">Live Charts</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section" id="stats" aria-labelledby="stats-heading">
+    <div class="section-inner stats-inner">
+      <div class="stats-text">
+        <div class="section-label" data-i18n="stats.label">Proven Impact</div>
+        <h2 class="section-title" id="stats-heading" data-i18n="stats.title">Trusted by thousands of healthcare professionals</h2>
+        <p class="section-subtitle" data-i18n="stats.subtitle">From solo practitioners to hospital networks — Smart Medical System scales with your needs.</p>
+        <a href="#select-role" class="btn-primary" data-i18n="stats.cta">Join the Platform</a>
+      </div>
+      <div class="stats-grid" role="list">
+        <div class="stat-card" role="listitem">
+          <div class="stat-icon">🏥</div>
+          <div class="stat-val" data-count="50000">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label" data-i18n="stats.patients">Active Patients</div>
+        </div>
+        <div class="stat-card" role="listitem">
+          <div class="stat-icon">👨‍⚕️</div>
+          <div class="stat-val" data-count="2800">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label" data-i18n="stats.doctors">Registered Doctors</div>
+        </div>
+        <div class="stat-card" role="listitem">
+          <div class="stat-icon">💊</div>
+          <div class="stat-val" data-count="340">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label" data-i18n="stats.pharmacies">Partner Pharmacies</div>
+        </div>
+        <div class="stat-card" role="listitem">
+          <div class="stat-icon">📋</div>
+          <div class="stat-val" data-count="120000">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label" data-i18n="stats.prescriptions">Prescriptions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="role-section" id="select-role" aria-labelledby="role-heading">
+    <div class="section-inner">
+      <div class="section-label" data-i18n="roles.label">Choose Your Path</div>
+      <h2 class="section-title" id="role-heading" data-i18n="roles.title">Who are you today?</h2>
+      <p class="section-subtitle" data-i18n="roles.subtitle">Select your role to enter your personalized experience. Every user gets a tailored dashboard designed for their needs.</p>
+
+      <div class="roles-grid" role="list">
+
+        <div class="role-card" id="roleDoctor" role="listitem" tabindex="0" aria-label="Enter as Doctor" data-role="doctor">
+          <div class="role-card-bg" aria-hidden="true"></div>
+          <div class="role-glow" aria-hidden="true"></div>
+          <div class="role-illustration" aria-hidden="true">
+            <div class="role-svg-wrap blue-svg">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+               
+                <circle cx="60" cy="35" r="22" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+                <circle cx="60" cy="32" r="12" fill="#2563eb" opacity="0.15"/>
+                <path d="M38 90 C38 70 82 70 82 90 L82 110 L38 110 Z" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+      
+                <path d="M52 70 C52 80 58 85 60 85 C62 85 68 80 68 70" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <circle cx="60" cy="88" r="5" fill="#2563eb" opacity="0.7"/>
+        
+                <rect x="55" y="48" width="10" height="3" rx="1.5" fill="#2563eb"/>
+                <rect x="58.5" y="44.5" width="3" height="10" rx="1.5" fill="#2563eb"/>
+ 
+                <rect x="44" y="95" width="32" height="20" rx="3" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/>
+                <line x1="50" y1="102" x2="70" y2="102" stroke="#2563eb" stroke-width="1.5"/>
+                <line x1="50" y1="107" x2="65" y2="107" stroke="#2563eb" stroke-width="1.5" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="role-icon-badge blue-badge" aria-hidden="true" >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg>
+          </div>
+          <h3 class="role-title" data-i18n="roles.doctor.title">Doctor</h3>
+          <p class="role-desc" data-i18n="roles.doctor.desc">Create prescriptions, manage patients, check pharmacy availability, and detect medication conflicts in real-time.</p>
+          <ul class="role-features-list" aria-label="Doctor features">
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.doctor.f1">Smart Prescription Builder</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.doctor.f2">Conflict Detection</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.doctor.f3">Pharmacy Integration</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.doctor.f4">Patient Analytics</span></li>
+          </ul>
+          <button class="role-btn blue-btn " id="doctorbtn" data-i18n="roles.doctor.cta">Enter as Doctor
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+
+        <div class="role-card role-card-featured" id="rolePatient" role="listitem" tabindex="0" aria-label="Enter as Patient" data-role="patient">
+          <div class="featured-badge" data-i18n="roles.featured">Most Used</div>
+          <div class="role-card-bg" aria-hidden="true"></div>
+          <div class="role-glow glow-green" aria-hidden="true"></div>
+          <div class="role-illustration" aria-hidden="true">
+            <div class="role-svg-wrap green-svg">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+           
+                <circle cx="60" cy="35" r="22" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+                <circle cx="60" cy="32" r="12" fill="#16a34a" opacity="0.15"/>
+                <path d="M38 90 C38 70 82 70 82 90 L82 110 L38 110 Z" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+               
+                <polyline points="38,85 46,85 50,76 55,94 61,70 66,90 72,85 82,85" stroke="#16a34a" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+           
+                <rect x="45" y="95" width="30" height="20" rx="3" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+                <line x1="51" y1="103" x2="69" y2="103" stroke="#16a34a" stroke-width="1.5"/>
+                <line x1="51" y1="108" x2="63" y2="108" stroke="#16a34a" stroke-width="1.5" opacity="0.6"/>
+              
+                <circle cx="74" cy="55" r="5" fill="#16a34a" opacity="0.6"/>
+                <circle cx="74" cy="55" r="2" fill="#16a34a"/>
+              </svg>
+            </div>
+          </div>
+          <div class="role-icon-badge green-badge" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="role-title" data-i18n="roles.patient.title">Patient</h3>
+          <p class="role-desc" data-i18n="roles.patient.desc">Access your complete medical history, view prescriptions, track health metrics, and communicate directly with your doctor.</p>
+          <ul class="role-features-list" aria-label="Patient features">
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.patient.f1">Medical Timeline</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.patient.f2">Health Analytics</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.patient.f3">Doctor Communication</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.patient.f4">Emergency Alerts</span></li>
+          </ul>
+          <button class="role-btn green-btn" data-i18n="roles.patient.cta">Enter as Patient
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+
+
+        <div class="role-card" id="roleAccessibility" role="listitem" tabindex="0" aria-label="Enter Accessibility Mode" data-role="accessibility">
+          <div class="role-card-bg" aria-hidden="true"></div>
+          <div class="role-glow glow-purple" aria-hidden="true"></div>
+          <div class="role-illustration" aria-hidden="true">
+            <div class="role-svg-wrap purple-svg">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                <circle cx="60" cy="28" r="12" fill="#e9d5ff" stroke="#7c3aed" stroke-width="2"/>
+        
+                <circle cx="60" cy="52" r="6" fill="#7c3aed" opacity="0.7"/>
+      
+                <line x1="38" y1="55" x2="82" y2="55" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+
+                <line x1="60" y1="58" x2="50" y2="80" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+                <line x1="60" y1="58" x2="70" y2="80" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+           
+                <circle cx="60" cy="60" r="36" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+
+                <path d="M78 40 Q82 50 78 60" stroke="#7c3aed" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                <path d="M84 35 Q90 50 84 65" stroke="#7c3aed" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+         
+                <ellipse cx="60" cy="95" rx="15" ry="8" fill="#ddd6fe" stroke="#7c3aed" stroke-width="1.5"/>
+                <circle cx="60" cy="95" r="4" fill="#7c3aed" opacity="0.7"/>
+              </svg>
+            </div>
+          </div>
+          <div class="role-icon-badge purple-badge" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 class="role-title" data-i18n="roles.a11y.title">Accessibility Mode</h3>
+          <p class="role-desc" data-i18n="roles.a11y.desc">Designed for users with disabilities. Full voice navigation, screen reader support, large text, and high contrast built-in.</p>
+          <ul class="role-features-list" aria-label="Accessibility features">
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.a11y.f1">Voice Navigation</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.a11y.f2">Screen Reader</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.a11y.f3">High Contrast</span></li>
+            <li><span class="check-icon" aria-hidden="true">✓</span> <span data-i18n="roles.a11y.f4">Large Text Mode</span></li>
+          </ul>
+          <button class="role-btn purple-btn" data-i18n="roles.a11y.cta">Accessibility Mode
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+  <div class="a11y-panel" id="a11yPanel" role="region" aria-label="Accessibility Controls" aria-hidden="true">
+    <div class="a11y-panel-header">
+      <span data-i18n="a11y.panel.title">Accessibility Controls</span>
+      <button class="a11y-close" id="a11yClose" aria-label="Close accessibility panel">✕</button>
+    </div>
+    <div class="a11y-controls">
+      <button class="a11y-ctrl-btn" id="readPageBtn" aria-label="Read entire page">
+        <span aria-hidden="true">🔊</span> <span data-i18n="a11y.read">Read Page</span>
+      </button>
+      <button class="a11y-ctrl-btn" id="pauseReadBtn" aria-label="Pause reading">
+        <span aria-hidden="true">⏸</span> <span data-i18n="a11y.pause">Pause</span>
+      </button>
+      <button class="a11y-ctrl-btn" id="stopReadBtn" aria-label="Stop reading">
+        <span aria-hidden="true">⏹</span> <span data-i18n="a11y.stop">Stop</span>
+      </button>
+      <button class="a11y-ctrl-btn" id="largeTextBtn" aria-label="Toggle large text" aria-pressed="false">
+        <span aria-hidden="true">🔡</span> <span data-i18n="a11y.largeText">Large Text</span>
+      </button>
+      <button class="a11y-ctrl-btn" id="highContrastBtn" aria-label="Toggle high contrast" aria-pressed="false">
+        <span aria-hidden="true">◑</span> <span data-i18n="a11y.contrast">High Contrast</span>
+      </button>
+    </div>
+  </div>
+
+
+  <button class="a11y-fab" id="a11yFab" aria-label="Open accessibility controls">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"/>
+      <circle cx="12" cy="7" r="2"/>
+      <line x1="12" y1="11" x2="12" y2="17"/>
+      <line x1="8" y1="14" x2="16" y2="14"/>
+    </svg>
+  </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- placed from other file-->
+<div id="testat">
+<div id="role-screen">
+  <div class="brand-header">
+    <div class="brand-logo">
+      <div class="logo-icon">🏥</div>
+      MedCore
+    </div>
+    <div class="brand-tagline">Smart Medical Platform · Powered by AI</div>
+  </div>
+
+  <div class="role-cards" role="list" aria-label="Select your role">
+    <div class="role-card" tabindex="0" role="listitem" onclick="enterApp('doctor')" onkeydown="if(event.key==='Enter')enterApp('doctor')" aria-label="Doctor — Clinical Portal">
+      <div class="role-icon-wrap icon-doctor">🩺</div>
+      <h3>Doctor</h3>
+      <p>Manage prescriptions, view patient records, and access clinical tools</p>
+      <span class="role-badge badge-doctor">Clinical Portal</span>
+    </div>
+
+    <div class="role-card" tabindex="0" role="listitem" onclick="enterApp('patient')" onkeydown="if(event.key==='Enter')enterApp('patient')" aria-label="Patient — Health Records">
+      <div class="role-icon-wrap icon-patient">🧑‍⚕️</div>
+      <h3>Patient</h3>
+      <p>View your medical history, active prescriptions, and upcoming visits</p>
+      <span class="role-badge badge-patient">Health Records</span>
+    </div>
+
+    <div class="role-card" tabindex="0" role="listitem" onclick="enterApp('access')" onkeydown="if(event.key==='Enter')enterApp('access')" aria-label="Accessibility Mode">
+      <div class="role-icon-wrap icon-access">♿</div>
+      <h3>Accessibility Mode</h3>
+      <p>Voice-guided, high-contrast, simplified interface designed for everyone</p>
+      <span class="role-badge badge-access">Inclusive Design</span>
+    </div>
+  </div>
+</div>
+
+<div id="app-shell" class="hidden">
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+    <a class="sidebar-logo" href="#" onclick="return false;" aria-label="MedCore Home">
+      <div class="s-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="10" fill="url(#logoGrad)"/>
+            <path d="M16 7v18M7 16h18" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="5" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop offset="0%" stop-color="#2563eb"/>
+                <stop offset="100%" stop-color="#7c3aed"/>
+              </linearGradient>
+            </defs>
+          </svg></div>
+      <span class="footer-brand-name">Smart<span>Medical</span></span>
+    </a>
+
+    <div class="sidebar-section-label" id="nav-section-label">Navigation</div>
+    <div id="sidebar-nav"><!-- injected per role --></div>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-user" id="sidebar-user" onclick="showToast('Profile settings coming soon','info','👤')">
+        <div class="user-avatar" id="u-avatar">DR</div>
+        <div class="user-info">
+          <div class="u-name" id="u-name">Dr. Sarah Ahmed</div>
+          <div class="u-role" id="u-role">Physician</div>
+        </div>
+        <span style="color:red;font-size:.8rem">⚙️</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="main-area">
+
+    <header class="top-navbar">
+      <button class="menu-toggle" id="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
+      <div class="navbar-title" id="navbar-title"></div>
+      <div class="navbar-actions">
+        <button class="nav-btn" onclick="toggleLanguage()" title="Language">
+  🌐
+</button>
+        <div class="nav-btn" title="Notifications" onclick="showToast('No new notifications','info','🔔')">
+          🔔<div class="notif-dot"></div>
+        </div>
+        <div class="nav-btn" title="Search" onclick="showToast('Search coming soon','info','🔍')">🔍</div>
+        <div class="back-btn"  onclick="exitApp()" >← Exit</div>
+      </div>
+    </header>
+
+    <main class="page-content" id="main-pages" role="main">
+
+    </main>
+  </div>
+</div>
+
+<div id="toast-container" aria-live="polite"></div>
+
+</div>
+
+
+
+
+ 
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="10" fill="url(#footerLogoGrad)"/>
+            <path d="M16 7v18M7 16h18" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop offset="0%" stop-color="#2563eb"/>
+                <stop offset="100%" stop-color="#7c3aed"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="footer-brand-name">Smart<span>Medical</span></span>
+      </div>
+      <p class="footer-tagline" data-i18n="footer.tagline">Intelligent healthcare for everyone.</p>
+      <div class="footer-links" role="list">
+        <a href="#" role="listitem" data-i18n="footer.privacy">Privacy</a>
+        <a href="#" role="listitem" data-i18n="footer.terms">Terms</a>
+        <a href="#" role="listitem" data-i18n="footer.contact">Contact</a>
+        <a href="#" role="listitem" data-i18n="footer.accessibility">Accessibility</a>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2025 Smart Medical System. Built for healthcare innovation.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
